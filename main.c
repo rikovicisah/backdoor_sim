@@ -32,7 +32,9 @@ static int get_temp_dir(char *buf, size_t cap)
     return 1;
 }
 
-//
+// cl /W4 /Fe:backdoor_sim.exe backdoor_sim.c
+// backdoor_sim.exe letmein
+
 static void timestamp(char *buf, size_t cap)
 {
     time_t t = time(NULL);
